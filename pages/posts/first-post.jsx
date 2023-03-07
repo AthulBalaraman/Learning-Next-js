@@ -3,8 +3,9 @@ import Head from "next/head"
 import Image from "next/image"
 import Script from "next/script"
 import ProfilePic from "../../public/images/profile.jpeg"
+import Layout from "../../components/Layout"
 export default function FirstPost(){
-  return <>
+  return <Layout>
   <Head>
     <title>First Post page</title>
   </Head>
@@ -36,6 +37,5 @@ export default function FirstPost(){
   <h3>
     <Link href="/">Go back to home</Link>
   </h3>
-
-  </>
+  </Layout>
 }
